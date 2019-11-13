@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 from sklearn import neighbors
 
-train = pd.read_csv("spambase.train")
+train = pd.read_csv("spambase.train", header=None)
 Xtrain = train.values[:,:-1]
 ytrain = train.values[:,-1:]
 #ytrain.shape
 #ytrain.ravel()
-test = pd.read_csv("spambase.test")
+test = pd.read_csv("spambase.test", header=None)
 Xtest = test.values[:,:-1]
 ytest = test.values[:,-1:]
 
